@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: technical-accenture
+
+  r2dbc:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+
+server:
+  servlet:
+    context-path: /api/v1
+
