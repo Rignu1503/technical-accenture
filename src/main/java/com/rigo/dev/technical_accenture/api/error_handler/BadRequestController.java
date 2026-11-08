@@ -4,8 +4,8 @@ package com.rigo.dev.technical_accenture.api.error_handler;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.rigo.dev.technical_accenture.api.errors.BaseErrorResponse;
-import com.rigo.dev.technical_accenture.api.errors.ErrorsResp;
+import com.rigo.dev.technical_accenture.api.dto.errors.BaseErrorResponse;
+import com.rigo.dev.technical_accenture.api.dto.errors.ErrorsResp;
 import com.rigo.dev.technical_accenture.api.exeptions.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

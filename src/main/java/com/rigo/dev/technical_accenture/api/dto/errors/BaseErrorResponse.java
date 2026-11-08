@@ -1,4 +1,4 @@
-package com.rigo.dev.technical_accenture.api.errors;
+package com.rigo.dev.technical_accenture.api.dto.errors;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
