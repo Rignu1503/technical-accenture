@@ -1,4 +1,4 @@
-package com.rigo.dev.technical_accenture.infrastructure.adstract_services.generic;
+package com.rigo.dev.technical_accenture.infrastructure.abstract_services.generic;
 
 public interface DeleteService <Id>{
 

@@ -14,5 +14,5 @@ import java.util.UUID;
 public class FranchiseResponse {
 
     private UUID id;
-    private String Name;
+    private String name;
 }

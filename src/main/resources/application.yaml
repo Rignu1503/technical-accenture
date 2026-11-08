@@ -11,7 +11,5 @@ spring:
     init:
       mode: always
 
-server:
-  servlet:
-    context-path: /api/v1
-
+  webflux:
+    base-path: /api/v1

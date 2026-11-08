@@ -1,11 +1,11 @@
-CREATE TABLE franchises
+CREATE TABLE IF NOT EXISTS franchises
 (
     id         UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name       VARCHAR(255) NOT NULL,
     created_at TIMESTAMP        DEFAULT NOW()
 );
 
-CREATE TABLE branches
+CREATE TABLE IF NOT EXISTS branches
 (
     id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name         VARCHAR(255) NOT NULL,
@@ -18,9 +18,9 @@ CREATE TABLE branches
             ON DELETE CASCADE
 );
 
-CREATE INDEX idx_branches_franchise_id ON branches (franchise_id);
+CREATE INDEX IF NOT EXISTS idx_branches_franchise_id ON branches (franchise_id);
 
-CREATE TABLE products
+CREATE TABLE IF NOT EXISTS products
 (
     id        UUID PRIMARY KEY      DEFAULT gen_random_uuid(),
     name      VARCHAR(255) NOT NULL,
@@ -37,4 +37,4 @@ CREATE TABLE products
         CHECK (stock >= 0)
 );
 
-CREATE INDEX idx_products_branch_id ON products (branch_id);
+CREATE INDEX IF NOT EXISTS idx_products_branch_id ON products (branch_id);
