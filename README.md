@@ -2,6 +2,12 @@
 
 API REST reactiva para la gestión de franquicias, sucursales y productos, desarrollada con **Java 21**, **Spring Boot WebFlux** y **PostgreSQL** mediante **R2DBC**.
 
+
+> **Despliegue en la nube (Google Cloud Run):**  
+> La API se encuentra desplegada y disponible públicamente en:  
+>  [https://technical-accenture-582701978821.us-west1.run.app/api/v1](https://technical-accenture-582701978821.us-west1.run.app/api/v1)
+
+
 ---
 
 ## Tecnologías
@@ -18,14 +24,14 @@ API REST reactiva para la gestión de franquicias, sucursales y productos, desar
 
 ---
 
-## 📋 Requisitos
+## Requisitos
 
 * **Docker**.
 * **Java 21** *(únicamente si deseas compilar o ejecutar la aplicación sin Docker)*.
 
 ---
 
-## 🛠️ Instalación y ejecución
+## Instalación y ejecución
 
 El proyecto está configurado con un `Dockerfile` multi-stage que compila el código fuente y genera el paquete `.jar` automáticamente dentro del contenedor, por lo que **no es necesario compilar manualmente ni tener Java o Gradle instalados**.
 
@@ -41,7 +47,7 @@ docker compose up --build -d
 ```
 
 La API y la base de datos se inicializarán automáticamente. La API estará disponible en:  
-👉 **`http://localhost:8080/api/v1`**
+ **`http://localhost:8080/api/v1`**
 
 ### 3. Para detener los servicios
 ```bash
